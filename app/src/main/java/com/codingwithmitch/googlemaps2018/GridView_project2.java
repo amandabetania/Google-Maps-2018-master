@@ -6,13 +6,11 @@ import android.widget.GridView;
 
 public class GridView_project2 extends AppCompatActivity {
 
-    private GridView_ImageAdapter adapter;
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.grid_view);
 
-        GridView gridView = (GridView) findViewById(R.id.list_grid_view);
+        GridView gridView = (GridView) findViewById(R.id.grid_view);
         gridView.setAdapter(new GridView_ImageAdapter(this));
     }
 }
